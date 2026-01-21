@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Website Data Diri</title>
+
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    min-height: 100vh;
+    background: linear-gradient(135deg, #667eea, #764ba2);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+}
+
+.container {
+    width: 100%;
+    max-width: 900px;
+    background: rgba(255, 255, 255, 0.15);
+    backdrop-filter: blur(15px);
+    border-radius: 20px;
+    box-shadow: 0 25px 40px rgba(0,0,0,0.2);
+    overflow: hidden;
+    animation: fadeIn 1s ease;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.header {
+    padding: 40px;
+    text-align: center;
+    color: #fff;
+}
+
+.header img {
+    width: 130px;
+    height: 130px;
+    border-radius: 50%;
+    border: 4px solid rgba(255,255,255,0.5);
+    object-fit: cover;
+    margin-bottom: 15px;
+}
+
+.header h1 {
+    font-size: 28px;
+    font-weight: 700;
+}
+
+.header p {
+    opacity: 0.9;
+}
+
+.content {
+    background: #fff;
+    padding: 40px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+}
+
+.card {
+    background: #f7f7f7;
+    padding: 25px;
+    border-radius: 15px;
+    transition: 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 15px 30px rgba(0,0,0,0.15);
+}
+
+.card h2 {
+    font-size: 18px;
+    margin-bottom: 15px;
+    color: #764ba2;
+}
+
+.card ul {
+    list-style: none;
+}
+
+.card ul li {
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.card span {
+    font-weight: 600;
+}
+
+.footer {
+    text-align: center;
+    padding: 20px;
+    background: #f1f1f1;
+    font-size: 14px;
+}
+
+@media (max-width: 768px) {
+    .content {
+        grid-template-columns: 1fr;
+    }
+}
+</style>
+</head>
+
+<body>
+
+<div class="container">
+    <div class="header">
+        <img src="https://i.ibb.co/2FsfXqM/user.png" alt="Foto Profil">
+        <h1>Nama Lengkap</h1>
+        <p>Mahasiswa | Web Developer</p>
+    </div>
+
+    <div class="content">
+        <div class="card">
+            <h2>📌 Data Pribadi</h2>
+            <ul>
+                <li><span>Nama:</span> Nama Lengkap</li>
+                <li><span>Tempat Lahir:</span> Jakarta</li>
+                <li><span>Tanggal Lahir:</span> 1 Januari 2005</li>
+                <li><span>Jenis Kelamin:</span> Laki-laki</li>
+            </ul>
+        </div>
+
+        <div class="card">
+            <h2>📚 Pendidikan</h2>
+            <ul>
+                <li>SD Negeri Contoh</li>
+                <li>SMP Negeri Contoh</li>
+                <li>SMA Negeri Contoh</li>
+            </ul>
+        </div>
+
+        <div class="card">
+            <h2>💻 Keahlian</h2>
+            <ul>
+                <li>HTML & CSS</li>
+                <li>JavaScript</li>
+                <li>Desain UI</li>
+            </ul>
+        </div>
+
+        <div class="card">
+            <h2>📞 Kontak</h2>
+            <ul>
+                <li><span>Email:</span> email@email.com</li>
+                <li><span>WhatsApp:</span> 08xxxxxxxxxx</li>
+                <li><span>Instagram:</span> @username</li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="footer">
+        © 2026 • Website Data Diri | Dibuat dengan ❤️
+    </div>
+</div>
+
+</body>
+</html>
